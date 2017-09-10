@@ -1,0 +1,25 @@
+[0m[[0minfo[0m] [0mPackaging /users/yuehgoh/Practice/squaredistance/target/scala-2.11/chisel-module-template_2.11-1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	example/GenFIR$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/GenFIR$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	example/GenFIR.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/GenFIR.class[0m
+[0m[[0mdebug[0m] [0m	example/GenFIR$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/GenFIR$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	example/sqdistDriver.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/sqdistDriver.class[0m
+[0m[[0mdebug[0m] [0m	example/GenFIR$.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/GenFIR$.class[0m
+[0m[[0mdebug[0m] [0m	example/sqdistDriver$.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/sqdistDriver$.class[0m
+[0m[[0mdebug[0m] [0m	example/sqdistDriver$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/sqdistDriver$delayedInit$body.class[0m
+[0m[[0mdebug[0m] [0m	example/sqdist.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/sqdist.class[0m
+[0m[[0mdebug[0m] [0m	example/sqdistDriver$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/sqdistDriver$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	example[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example[0m
+[0m[[0mdebug[0m] [0m	example/sqdist$$anon$1.class[0m
+[0m[[0mdebug[0m] [0m	  /users/yuehgoh/Practice/squaredistance/target/scala-2.11/classes/example/sqdist$$anon$1.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

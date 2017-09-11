@@ -1,15 +1,15 @@
    
 package example
 
+import org.scalatest.{FreeSpec, Matchers}
+
+import math.{pow, sqrt}
+import scala.util.Random
+import scala.io.Source
 import chisel3._
 import chisel3.experimental.FixedPoint
 import chisel3.internal.firrtl.KnownBinaryPoint
-import chisel3.iotesters
 import chisel3.iotesters.PeekPokeTester
-import org.scalatest.{FreeSpec, Matchers}
-import math.{sqrt,pow}
-import scala.util.Random
-import scala.io.Source
 
 
 /**
@@ -85,6 +85,18 @@ class HardwareHashMaker(val fixedType: FixedPoint,
 }
 
 class HashFunctionTester(c: HardwareHashMaker) extends PeekPokeTester(c) {
+  def pokeFixedPoint(signal: FixedPoint, value: Double): Unit = {
+    val bigInt = value.F(signal.binaryPoint).litValue()
+    poke(signal, bigInt)
+  }
+  def peekFixedPoint(signal: FixedPoint): Double = {
+    val bigInt = peek(signal)
+    signal.binaryPoint match {
+      case KnownBinaryPoint(bp) => FixedPoint.toDouble(bigInt, bp)
+      case _ => throw new Exception("Cannot peekFixedPoint with unknown binary point location")
+    }
+  }
+
   val hashMaker = new HashMaker(c.keySize, c.hashDepth, c.w, c.b, c.weights)
 
   def oneTest(key: Array[Double]) {
@@ -149,8 +161,8 @@ class HashFunctionSpec extends FreeSpec with Matchers {
       w = 4.0, b = 0.0,
       keySize = 4, hashDepth = 5,
       fixedWidth = 64, binaryPoint = 32,
-//      Random.nextGaussian _
-      () => 0.125
+      Random.nextGaussian _
+//      () => 0.125
     ) should be (true)
   }
 }
